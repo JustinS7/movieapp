@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: rgba(150, 87, 4, 0.966);
+  font-family: "Bebas Neue", cursive;
+  line-height: 1rem;
+  margin: 0; }
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(150, 87, 4, 0.966); }
+
+.search {
+  background-color: transparent;
+  border: 2px solid #b35802;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: white; }
+
+.search::placeholder {
+  color: white; }
+
+.search::focus {
+  outline: none;
+  background-color: rgba(150, 87, 4, 0.966); }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: #b35802;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px; }
+
+.movie img {
+  width: 100%; }
+
+.movie-info {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px; }
+
+.movie-info h3 {
+  margin-top: 0; }
+
+.movie-info span {
+  background-color: #b35802;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 2rem; }
+
+.movie-info span.green {
+  color: lightgreen; }
+
+.movie-info span.orange {
+  color: orange; }
+
+.movie-info span.red {
+  color: red; }
+
+.overview {
+  background-color: rgba(150, 87, 4, 0.966);
+  border: 5px solid white;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in; }
+
+.movie:hover .overview {
+  transform: translateY(0); }
+
+#titlefont {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.home {
+  display: inline-block;
+  position: absolute;
+  padding: 15px 20px;
+  left: 30px;
+  font-family: inherit;
+  background-color: rgba(150, 87, 4, 0.966);
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 26px;
+  cursor: pointer; }
+
+.home:hover {
+  opacity: 0.9; }
